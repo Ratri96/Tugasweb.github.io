@@ -1,0 +1,202 @@
+*{margin: 0px auto;}
+html ,body {
+	height: 100%;
+	width: 100%;
+}
+
+.container{
+	min-height: 100%;
+	position: relative;
+	font-size: 20px;
+}
+
+.head{
+	 background:#ff0404;
+     background:-webkit-linear-gradient(top,#ff0404 0%,#f5ed54 85%);
+     background:-moz-linear-gradient(top,#ff0404 0%,#f5ed54 85%);
+     background:-o-linear-gradient(top,#ff0404 0%,#f5ed54 85%);
+     background:-ms-linear-gradient(top,#ff0404 0%,#f5ed54 85%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0404',endColorstr='#f80bea',GradientType=0);
+     height:8%;
+     border-bottom: 1px solid #8f12a2;
+}
+/*tapal kuda*/
+.head .img {
+	width: 30%;
+	margin-left: 3%; 
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+h1{
+	color: #f6ff66;
+}
+
+nav {
+ 	display: inline-flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+ 	} 
+/*beranda, akomodasi, wisata*/
+nav ul {
+	position: absolute;
+	margin: 1.5%;
+	right: 0;
+	top: 2%;
+}
+
+nav ul li {
+	font-size: 120%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #060606;
+}
+
+nav ul li:hover a{
+ 		color:blue;
+ 		}
+a {
+	text-decoration: none;
+	color: #010101;
+}
+body{
+	background-color: #white;
+	font-family: "Lato", sans-serif;
+	margin: 0px;
+	max-width: 100%;
+	margin: auto;
+	height: 100%;
+}
+.content {
+	font-size: 15px;
+}
+
+.nama{
+	color: black;
+	font-size: 30px;
+	position: absolute;
+	top: 550px;
+	width: 100%;
+	text-align: center;
+}
+
+.dot{
+	height: 15px;
+  	width: 15px;
+ 	margin: 0 2px;
+	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.6s ease;
+}
+.next{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 600px;
+}
+.active{
+	background-color: #717171;
+}
+
+/*Animasi*/
+.fade {
+  	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 2s;
+  	animation-name: fade;
+  	animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  	from {opacity: .4} 
+  	to {opacity: 1}
+}
+
+@keyframes fade {
+  	from {opacity: .4} 
+  	to {opacity: 1}
+}
+
+ol, ul {
+    list-style: none;
+}
+li{
+	display: inline-block;
+
+}
+.zoom-effect:hover img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+table {
+	border: none;
+	padding-bottom: 5%;
+}
+
+.middle img{
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	padding-bottom: 2%;
+}
+
+.footer {
+	height: 35px;
+	line-height: 35px;
+	background:#4d1313;
+	color: #EBE8E8;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	font-size: 65%;
+}
+
+@media only screen and (max-width: 768px) {
+.head .img {
+	width: 70%;
+	margin-left: 5%; 
+	padding-top: 7%;
+}
+nav ul {
+	position: block;
+	margin: 1%;
+	top: 1%;
+	left: 70%;
+}
+
+nav ul li {
+	font-size: 80%;
+	padding-left: 30%;
+	padding-right: 0%;
+	margin: 3%;
+}
+
+.dot{
+	height: 10px;
+  	width: 10px;
+  	margin: 2%;
+}
+.next{
+	top: 70%;
+}
+.nama{
+	font-size: 20px;
+	top: 80%;
+}
+table{
+	padding-bottom: 7%;
+	font-size: 90%;
+}
+
+iframe {
+	size: 50%;
+}
+.footer {
+	font-size: 60%;
+}
+}
