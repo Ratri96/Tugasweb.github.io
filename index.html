@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Info Pariwisata JATIM</title>
+
+</head>
+<body>
+	<div class="container">
+	<div class="head">
+				<img src="Gambar/tapalkuda.png" class="img">
+			<nav>
+			<ul>
+					<li><strong><a href="index.html">Beranda</a></li>
+					<li><a href="wisata.html">Wisata</a></li>
+					<li><a href="akomodasi.html">Akomodasi</a></li>
+					<li><a href="about.html">About Us</a></strong></li>
+			</ul>
+			</nav>
+	</div>
+		<div class="next">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+
+		<div class="slider">
+			<img src="Slider/papuma.jpg" style="width: 100%">
+			<div class="nama"><a href="papuma.html">Pantai Papuma - Jember</a></div>
+		</div>
+		<div class="slider">
+			<img src="Slider/merah.jpg" style="width: 100%">
+			<div class="nama"><a href="merah.html">Pulau Merah - Banyuwangi</a></div>
+		</div>
+		<div class="slider">
+			<img src="Slider/B29.jpg" style="width: 100%">
+			<div class="nama"><a href="b29.html">Puncak B29 - Lumajang</a></div>
+		</div>
+		<div class="slider">
+			<img src="Slider/bjbr.jpg" style="width: 100%">
+			<div class="nama"><a href="bjbr.html">Taman Mangrove BJBR - Probolinggo</a></div>
+		</div>
+		<div class="slider">
+			<img src="Slider/tas.jpg" style="width: 100%">
+			<div class="nama"><a href="tasnan.html">Pemandian Tasnan - Bondowoso</a></div>
+		</div>
+			
+
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slider");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000);
+}
+
+</script>
+<!-- start:footer -->
+<div class="footer">
+	<center> Copyright &copy; 2019 Designed by Iswari Indahing Ratri [1191].  All right reserved
+</center>
+</div>
+<!-- end:footer -->
+</div>
+</body>
+</html>

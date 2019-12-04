@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Info Pariwisata JATIM</title>
+</head>
+<body>
+	<script src="script.js"></script>
+	<div class="container">
+	<div class="head">
+		<div class="header">
+				<img src="Gambar/tapalkuda.png" width=500px class="img">
+			<nav>
+			<ul>
+					<li><strong><a href="index.html">Beranda</a></li>
+					<li><a href="wisata.html">Wisata</a></li>
+					<li><a href="akomodasi.html">Akomodasi</a></li>
+					<li><a href="about.html">About Us</a></strong></li>
+			</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="content">
+<table width="100%" style="padding-top: 2%; padding-right: 20%; margin: 2%">
+			<tr >
+				<td><center><strong>Partnership:</strong></center></td>
+				<td><center><strong>Contact Us:</strong></center></td>
+			</tr>
+			<tr>
+				<td><center><strong><a href="https://www.booking.com/" target="_blank"><img src="Gambar/booking.png" width=20%></center></td>
+				<td><center><font size=2%><a href="https://www.instagram.com/" target="_blank"><img src="Gambar/ig.png" width=20%><br>@WisataTapalKuda_land</a></font></center></td>
+			</tr>
+			<tr>
+				<td><center><a href="https://www.traveloka.com/" target="_blank"><img src="Gambar/traveloka.png" width=20%></center></td>
+				<td><center><font size="2%"><a href="https://www.twitter.com/" target="_blank"><img src="Gambar/tw.png" width=20%><br>@WisataTapalKuda_land</a></font></center></td>
+			</tr>
+		</table>
+		<br>
+		<center><form name="pariwisata" method="POST" action="proses.php" enctype="multipart/form-data">
+			<input type="hidden" name="halaan" value="1">
+			<label for="nama" style="color: black">Nama :</label>
+			<input type="username" name="username" id="username" style="width: 20%" placeholder="Masukkan Nama"><br><br>
+
+			<label for="email" style="color: black">Email : </label>
+			<input type="email" name="email" id="email" style="width: 20%" placeholder="Masukkan Email"><br><br>
+
+			<label for="pesan" style="color: black;">Pesan : </label><br>
+			<textarea name="pesan" id="pesan" style="width: 30%; height: 70px;" placeholder="Tulis Pesan"></textarea><br><br>
+
+			<input type="button" value="Send" onclick="terimainput()" style="width: 150px;height: 50px; background-color: #1FC9BF; color: white;">
+		</form></center>
+		<br><br><br><br>
+	</div>
+<!-- start:footer -->
+<div class="footer">
+	<center> Copyright &copy; 2019 Designed by Iswari Indahing Ratri [1191].  All right reserved
+</center>
+</div>
+<!-- end:footer -->
+</div>
+</body>
+</html>
